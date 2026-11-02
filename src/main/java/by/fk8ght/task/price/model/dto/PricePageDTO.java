@@ -1,0 +1,18 @@
+package by.fk8ght.task.price.model.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PricePageDTO {
+    private List<PriceDTO> items;
+    private int page;
+    private int size;
+    private long totalElements;
+    private boolean hasNext;
+}
